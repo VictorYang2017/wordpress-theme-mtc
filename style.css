@@ -1,0 +1,366 @@
+/*
+Theme Name: Master Time Centre
+Theme URI: https://wordpress.org/themes/twentyseventeen/
+Author: Victor Yang
+Author URI: https://wordpress.org/
+Description: Master Time Center theme!
+Version: 1.5
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: master-time-center
+*/
+/*Normalize CSS*/html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,[type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type="checkbox"],[type="radio"]{box-sizing:border-box;padding:0}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto}[type="search"]{-webkit-appearance:textfield;outline-offset:-2px}[type="search"]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+h2{
+    font-family: 'Crimson Text', serif;
+}
+
+a{
+    text-decoration: none;
+}
+/*Main nav*/
+nav{
+    padding: 35px 0 30px 0;
+
+}
+.menu-main-container{
+    display: flex;
+    justify-content: flex-end;
+}
+#menu-main{
+    display: flex;
+    justify-content: space-evenly;
+    width: 35%;
+    list-style: none;
+
+}
+
+#menu-main a{
+    text-decoration: none;
+    font-size: 1.2vw;
+    color:#fff;
+}
+
+#menu-main a:hover{
+    color:#b1cbd8;
+}
+
+
+/*Custom nav*/
+#custom-main-nav{
+    background-color:#353c40;
+    height:100px;
+}
+
+
+/*Body*/
+body{
+    background-color:#fcfcfc;
+}
+/*(Front page) Hero image*/
+#home-container{
+    width:100%;
+}
+
+.hero-image{
+    width:100%;
+    height:700px;
+    background-image: url("assets/images/main-banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center;
+
+}
+
+.hero-image-background{
+    width:100%;
+    height:700px;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.hero-image--information{
+    width:50%;
+    height:250px;
+    margin:165px 0 0 50px;
+
+}
+
+.hero-image--information p{
+    width:75%;
+    color:#fff;
+    font-size: 1vw;
+}
+
+.hero-image--information h1{
+    color:#fff;
+    width:100%;
+    font-weight: bold;
+    font-size: 3vw;
+    margin-bottom: 10px;
+
+}
+
+
+/*(Front page) Home content*/
+.home-content{
+    width:80%;
+    margin:0 auto;
+}
+
+.home-content h2{
+    text-align: center;
+    font-size: 1.7vw;
+    margin: 50px auto 20px auto;
+    padding-bottom:2px;
+    border-bottom:2px solid #0389a4;
+    width:15%;
+}
+
+.home-content h5{
+    text-align: center;
+    font-size: 0.9vw;
+    color:#bdbdbd;
+    font-weight: 500;
+    margin-bottom:10px;
+}
+
+.home-content p{
+    width:70%;
+    margin:auto;
+    font-size: 1vw;
+}
+
+.home-content--about-us-btn{
+    /*border: 2px solid red;*/
+    width: 70%;
+    margin: 18px auto;
+    background-color: #007795;
+    cursor: pointer;
+}
+
+.home-content--about-us-btn p{
+    padding:8px;
+    text-align: center;
+    font-size: 1.1vw;
+    color:#fff;
+}
+
+.home-content--links{
+    border-top:2px solid #f4f4f4;
+    margin:150px 0 80px 0;
+}
+
+.home-content--links h1{
+    padding:100px 0 8px 0;
+    text-align: center;
+    border-bottom:2px solid #0389a4;
+    width:15%;
+    margin:0 auto 30px auto;
+}
+
+.three-links{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid #f4f4f4;
+    padding-bottom: 150px;
+
+}
+.links{
+    width:30%;
+}
+.img-links{
+    width:100%;
+    height:300px;
+}
+
+.meet-the-team-img{
+    background-image: url("assets/images/team.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center;
+
+}
+
+.watch-repairs-img{
+    background-image: url("assets/images/watch.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center;
+
+}
+
+.glass-repairs-img{
+    background-image: url("assets/images/glass.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center;
+
+}
+
+.links-btn{
+    margin-top:15px;
+    width:100%;
+    height:50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    background-color:#007795;
+    cursor:pointer;
+
+}
+
+.links-btn p{
+    font-size: 1.1vw;
+    font-weight:bold;
+    color:#fff;
+}
+
+.wo-op{
+    display:flex;
+}
+
+/*About page*/
+.banner{
+    width:100%;
+    height:300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.banner img{
+    width:100%;
+    height:300px;
+}
+
+.about-information--info{
+    width:80%;
+    margin:58px auto;
+}
+
+.about-information--info h2{
+    text-align: center;
+    font-size:1.7vw;
+    margin:0 auto 20px auto;
+    width:15%;
+    border-bottom: 2px solid #0389a4;
+
+}
+
+.about-information--info p{
+    font-size:1vw;
+    width:70%;
+    margin:0 auto;
+}
+
+.about-information--info h5{
+    text-align: center;
+    font-size:0.9vw;
+    margin-bottom: 10px;
+    color:#bdbdbd;
+}
+
+.points-heading{
+    width: 55%;
+    margin: 0 auto;
+}
+
+.points-heading h2{
+    font-size: 1.3vw;
+    margin-top:100px;
+}
+
+.points{
+    display:flex;
+    justify-content: space-evenly;
+    margin: 40px 0 100px 0;
+}
+
+.points-left li, .points-right li{
+    padding-bottom: 30px;
+    font-size: 0.9vw;
+    font-weight: bold;
+}
+
+/*Service page*/
+.individual-service{
+    display:flex;
+    margin:40px 20px;
+}
+.individual-service--information{
+    padding-left:20px;
+    width:50%;
+    margin-left:50px;
+}
+.individual-service--information p{
+    font-size:1vw;
+    margin-top:15px;
+}
+
+
+/*Footer*/
+footer{
+    background-color:#353c40;
+    width:100%;
+    hieght:300px;
+    padding:25px;
+    display: flex;
+}
+
+.footer-nav{
+    width:80%;
+    margin:0 auto;
+}
+
+#menu-secondary{
+    display:flex;
+    justify-content: space-around;
+}
+
+#menu-secondary li{
+    list-style: none;
+
+}
+
+#menu-secondary a{
+    color:#fff;
+    font-size:1.3vw;
+}
+
+#menu-secondary a:hover{
+    color:#b1cbd8;
+}
+
+.footer-informations-left{
+    width:40%;
+}
+
+.address{
+    text-align: center;
+    color:#fff;
+    font-size: 1vw;
+    margin-top:10px;
+}
+
+.footer-information-right{
+    width:60%;
+    border-left:2px solid rgba(0,0,0,0.2);
+
+}
+
+.footer-right-info{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer-information-right p{
+    font-size: 1.2vw;
+    color:#fff;
+    text-align: center;
+}

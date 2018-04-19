@@ -1,0 +1,59 @@
+/*Front page (our-product)*/
+.wo-op-heading{
+    width: 15%;
+    margin: 40px auto 40px auto;
+    text-align: center;
+    border-bottom: 2px solid #0389a4;
+    padding-bottom: 15px;
+}
+.wo-op--our-product{
+    margin:20px 10px 40px 10px;
+}
+.wo-op--our-product img{
+    width:300px;
+    height:150px;
+}
+.wo-op--our-product h3{
+    text-align: center;
+}
+
+
+
+/*Other woocommerce page*/
+.woocommerce-cart-icon{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.fa{
+    color:#fff;
+    padding-top:10px;
+}
+product_title{
+    color:red;
+}
+.woocommerce .woocommerce-breadcrumb{
+    padding-top:20px;
+}
+.price{
+    display:flex;
+    flex-direction: column;
+    margin-bottom:10px;
+}
+
+/*This is remove the underline on the sales price*/
+ins{
+    text-decoration: none;
+}
+
+.woocommerce-product-details__short-description p{
+    padding:5px 0 10px 0;
+}
+
+.quantity .qty{
+    height: 36px;
+}
+
+.woocommerce-Price-amount .amount{
+    text-decoration: none;
+}
