@@ -223,6 +223,7 @@ body{
 
 .wo-op{
     display:flex;
+    justify-content: center;
 }
 
 /*About page*/
@@ -282,7 +283,7 @@ body{
     margin: 40px 0 100px 0;
 }
 
-.points-left li, .points-right li{
+.left-side-list li, .right-side-list li{
     padding-bottom: 30px;
     font-size: 0.9vw;
     font-weight: bold;
@@ -304,6 +305,31 @@ body{
 }
 
 
+/*Blog page*/
+.each-blog{
+    margin:40px 0 25px 15px;
+    padding-bottom:50px;
+    border-bottom:2px solid red;
+    width:80%;
+    display: flex;
+    align-items: center;
+}
+
+.each-blog img{
+    width:300px;
+    height:220px;
+    padding: 20px 20px 0 0;
+
+}
+
+.each-blog h5{
+    padding-bottom:5px;
+    font-weight:bold;
+}
+
+.each-blog p{
+    width:50%;
+}
 /*Footer*/
 footer{
     background-color:#353c40;

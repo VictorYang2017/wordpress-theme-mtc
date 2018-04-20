@@ -10,9 +10,6 @@
 <?php get_header(); ?>
 <?php get_template_part('template-parts/custom-main-nav'); ?>
     <div id="content-inner">
-        <p>This is index!</p>
-
-
     <?php //The loop
     if ( have_posts() ) : while ( have_posts() ) : the_post();
     get_template_part('template-parts/content');

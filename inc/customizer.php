@@ -169,9 +169,7 @@ function mastertimecenter_customize_register($wp_customize)
 
 
     //About image
-    $wp_customize->add_setting('mastertimecenter_about_image', array(
-        'default' => site_url().'/wp-content/uploads/2018/04/main-banner.jpg'
-    ));
+    $wp_customize->add_setting('mastertimecenter_about_image', array());
     $wp_customize->add_control(new WP_Customize_Image_Control(
         $wp_customize,
         'mastertimecenter_about_image_ctrl',
